@@ -32,8 +32,8 @@ const Product = ({product}) => {
         </div>
       </div>
       <div>
-        <h2>{category}</h2>
-        <Link to={`/product/${id}`} className='font-semibold text-sm mb-1'>{title}</Link>
+        <h2 className='text-slate-400 capitalize text-sm'>{category}</h2>
+        <Link to={`/product/${id}`} className='font-semibold text-sm mb-1'>{title.slice(0,30)}</Link>
         <p className='font-thin'>$ {price}</p>
       </div>
     </div>

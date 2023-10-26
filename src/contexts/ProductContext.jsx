@@ -10,6 +10,7 @@ export const ProductContextProvider = ({children}) => {
 
     const filteredProducts = products.filter(product => product.category === "men's clothing" || product.category === "women's clothing")
 
+
     useEffect(() => {
         const fetchProducts = async () => {
             try {
